@@ -1,0 +1,5 @@
+.vscode
+/calendar/node_modules/
+/main/node_modules/
+/singup/node_modules/
+/todo/node_modules/

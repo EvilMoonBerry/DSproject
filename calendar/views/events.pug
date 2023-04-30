@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h1 List of events
+  table
+    tr 
+      th Username 
+      th Event
+      th Date
+      th Discription
+    each event, index in events 
+      tr 
+        td= index["id"]
+        td= event["username"]
+        td= event["event"]
+        td= event["date"]
+        td= event["disc"]

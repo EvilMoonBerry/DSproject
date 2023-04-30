@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1 List of users
+  table
+    tr 
+      th #ID
+      th Username 
+      th ToDos
+    each todo, index in todos 
+      tr 
+        td= index["id"]
+        td= todo["username"]
+        td= todo["todos"]

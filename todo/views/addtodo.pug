@@ -1,0 +1,18 @@
+extends layout
+block content
+  h1 Add task
+  p Add a task to ToDo list
+  
+  form(action="" id="add-task" method="POST")
+    label(for='input-name') Name: 
+    input#input-name(type="text" name = "name" )
+    br
+    br
+    label(for='input-task') Task: 
+    br
+    input#task-text(type="text" name = "task-text")
+    br
+    br
+    br
+    input#submit-data(type="submit" value = "submit-data")
+    script(src = "/javascripts/addtodo.js" ) 

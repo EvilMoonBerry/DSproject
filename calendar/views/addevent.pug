@@ -1,0 +1,22 @@
+extends layout
+block content
+  h1 Add event
+  p Add event to calendar
+  
+  form(action="" id="add-event" method="POST")
+    label(for='input-name') Name: 
+    input#input-name(type="text" name = "name" )
+    br
+    br
+    label(for='input-event') Event: 
+    input#event-text(type="text" name = "event-text")
+    br
+    label(for='input-date') Date: 
+    input#date-text(type="text" name = "date-text")
+    br
+    label(for='input-disc') Discription: 
+    input#disc-text(type="text" name = "disc-text")
+    br
+    br
+    input#submit-data(type="submit" value = "submit-data")
+    script(src = "/javascripts/addevent.js" )
